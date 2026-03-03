@@ -364,7 +364,6 @@
                     netlify-honeypot="bot-field">
 
                     <input type="hidden" name="form-name" value="contact">
-                    <input type="hidden" name="_redirect" value="/index.html">
 
                     <!-- Honeypot -->
                     <p style="display:none">
@@ -374,6 +373,7 @@
                     </p>
 
                     <div class="contactformcontainer">
+
                         <div class="inputs">
                             <input type="text" name="name" placeholder="Enter your name" required>
                             <input type="email" name="email" placeholder="Enter email address" required>
@@ -381,7 +381,7 @@
                         </div>
 
                         <div>
-                            <textarea name="description" placeholder="Enter your message..." required></textarea>
+                            <textarea name="message" placeholder="Enter your message..." required></textarea>
                             <button type="submit" class="send herobtn">
                                 Send Message
                             </button>
