@@ -952,7 +952,11 @@ footer{
         text-align: center;
         width: 100%;
     }
-    
-    
+    .footcontactdetail .footaddress{
+        justify-content: center;
+    }
+    .footsociallinks p{
+        text-align: center;
+    }
 }
 
