@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--text-font);
 }
 
 :root{
@@ -12,8 +17,44 @@
     --text-white:#fff;
     --text-color:#F1E9E9;
     --btn-color: linear-gradient(to right, #b820e6,#da7d20);
+
+
+     --text-font: 'Montserrat';
+    --heading-font:'Libre Baskerville', serif;
+
 }
 
+
+.herotextpart h1{
+    font-size: 4.2em;
+}
+
+.servicetext h1{
+    margin-bottom: 20px;
+}
+
+.projecttext h3{
+    font-size: 1em;
+}
+
+
+.abouttext h1,
+.servicetext h1,
+.skillstext h1,
+.projecttext h1,
+.contacttext h1{
+    font-size: 3em;
+}
+
+@media (max-width:446px) {
+    .abouttext h1,
+    .servicetext h1,
+    .skillstext h1,
+    .projecttext h1,
+    .contacttext h1{
+        font-size: 2.4em;
+    }
+}
 
 body{
     min-height: 100vh;
@@ -29,9 +70,13 @@ li{
     list-style: none;
 }
 
+h1,h2,h3,h4,h5{
+    font-family: var(--heading-font);
+}
+
 html{
     transition: all .4s;
-    scroll-behavior:auto;
+    scroll-behavior:smooth;
 }
 
 /* Scrollbar */
@@ -209,9 +254,7 @@ html{
     margin-top: 8%;
 }
 
-.herotextpart h1{
-    font-size: 4.2em;
-}
+
 
 .herotextpart p{
     width: 70%;
@@ -305,9 +348,7 @@ html{
     text-align: center;
     line-height: 35px;
 }
-.abouttext h1{
-    font-size: 2em;
-}
+
 .abouttextpart{
     letter-spacing: .6px;
 }
@@ -476,9 +517,7 @@ html{
     align-items: center;
 }
 
-.servicetext h1{
-    margin-bottom: 20px;
-}
+
 .servicetext p{
     max-width: 70% ;
 }
@@ -747,6 +786,11 @@ html{
     margin: 20px 20px 0 0; 
 }
 
+
+#projects{
+    margin-top: 13%;
+}
+
 @media screen and (max-width:1000px) {
     .projectcard{
         width: 80%;
@@ -838,6 +882,13 @@ html{
     height: 55%;
 }
 
+.send{
+    cursor: pointer;
+}
+
+.send:hover{
+    color: var(--text-white);
+}
 @media screen and (max-width:1000px){
     .contactcontainer{
         grid-template-columns: 1fr;
@@ -962,5 +1013,20 @@ input, textarea{
     .footsociallinks p{
         text-align: center;
     }
+
+    .projectPage{
+        margin-top: 25%;
+    }
 }
+
+
+@media (max-width:450px) {
+    .projectPage{
+        margin-top: 30%;
+    }
+}
+.projectnav{
+   color: var(--mini-hover); 
+}
+
 
